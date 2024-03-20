@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../style/const.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <script src="../script/header.js"></script>
+
+    <main>
+        <div class="container">
+            <div class="payment">
+               <p class="card-heading">Detalii Card</p>
+               <div class="card-type">
+                  <p>Tipul de card: <span id="card-type"></span></p>
+                  <div class="cards">
+                     <img src="../img/mastercard.png" alt="Mastercard">
+                     <img src="../img/visa.png" alt="Visa">
+                  </div>
+               </div>
+               <div class="cardname">
+                  <label for="name">Numele de pe card</label>
+                  <input type="text" name="name" placeholder="Nume">
+               </div>
+               <div class="cardnumber">
+                  <label for="number">Numărul cardului</label>
+                  <input type="text" name="number" placeholder="1111-2222-3333-4444" />
+               </div>
+               <div class="carddetails">
+                  <div class="expiration">
+                     <label for="date">Data expirării</label>
+                     <input type="text" name="date" placeholder="ll/aa">
+                  </div>
+                  <div class="cvv">
+                     <label for="cvv">CVV</label>
+                     <input type="text" name="cvv" placeholder="123">
+                  </div>
+               </div>
+               <div class="line"></div>
+               <div class="prices">
+                  <div class="subtotal">
+                     <p class="text">Subtotal</p>
+                     <p class="money" id="subtotal">$000</p>
+                  </div>
+                  <div class="shiping">
+                     <p class="text">Transport</p>
+                     <p class="money" id="shipping">$0</p>
+                  </div>
+                  <div class="total">
+                     <p class="text">Total (inclusiv taxele)</p>
+                     <p class="money" id="total">$000</p>
+                  </div>
+               </div>
+               <button id="checkout-btn">
+                  <p class="money">$000</p>
+                  <p class="text">Finalizare comandă</p>
+               </button>
+            </div>
+         </div>
+         
+    </main>
+
+    <script src="script/script.js"></script>
+    <script src="../script/products.js"></script>
+    <script src="../script/footer.js"></script>
+</body>
+</html>

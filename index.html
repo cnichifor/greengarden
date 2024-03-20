@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirect Page</title>
+  <script>
+    // Redirect to the desired URL immediately
+    sessionStorage.setItem('currentUser', JSON.stringify({username: 'guest', password: '', cartitems: []}));
+    window.location.href = 'Home/index.html';
+  </script>
+</head>
+<body>
+  <!-- Content of the page (not displayed in this case) -->
+</body>
+</html>
